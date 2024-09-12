@@ -1,0 +1,12 @@
+{
+    "name": "ev-nepal",
+    "version": "1.0.0",
+    "description": "EV-Nepal is an application that aggregates and displays Electric Vehicle (EV) related information, such as charging stations, sellers, news, and events in Nepal. This app scrapes data from various sources and offers real-time updates.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
