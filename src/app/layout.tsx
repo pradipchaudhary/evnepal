@@ -14,6 +14,11 @@ const geistMono = localFont({
     weight: "100 900",
 });
 
+const inte = localFont({
+    src: "./fonts/inte.woff2",
+    variable: "--font-inte",
+    weight: "100 900",
+});
 export const metadata: Metadata = {
     title: "EV Nepal - Real-Time Electric Vehicle Data and Resources",
     description:
@@ -60,9 +65,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased `}
-            >
+            <body className={`${inte.variable} antialiased `}>
                 <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
                     <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px]"></div>
                 </div>
