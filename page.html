@@ -1,0 +1,1413 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="60ee7912-a90c-435a-a5a5-8f18ecdc3e75" data-section-id="60ee7912-a90c-435a-a5a5-8f18ecdc3e75">
+
+<htmlCode>
+<div id="root">
+    <nav id="navbar" class="fixed w-full z-50 bg-neutral-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-xl font-bold">EV Nepal</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#hero" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-neutral-700">Home</a>
+                        <a href="#features" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-neutral-700">Features</a>
+                        <a href="#chargingstations" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-neutral-700">Charging Stations</a>
+                        <a href="#brands" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-neutral-700">Brands</a>
+                        <a href="#sellers" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-neutral-700">Sellers</a>
+                        <a href="#news" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-neutral-700">News</a>
+                        <a href="#pricing" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-neutral-700">Pricing</a>
+                        <a href="#contact" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-neutral-700">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-neutral-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-neutral-900">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#hero" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Home</a>
+                <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Features</a>
+                <a href="#chargingstations" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Charging Stations</a>
+                <a href="#brands" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Brands</a>
+                <a href="#sellers" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Sellers</a>
+                <a href="#news" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">News</a>
+                <a href="#pricing" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Pricing</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-neutral-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('animate__animated', 'animate__fadeIn');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('animate__animated', 'animate__fadeIn');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</div>
+</htmlCode></element><element id="e0ca3eb4-fb47-4cca-8912-906e958321f3" data-section-id="e0ca3eb4-fb47-4cca-8912-906e958321f3">
+
+<htmlCode>
+<div id="root">
+    <section id="hero" class="bg-neutral-900 text-white min-h-[70vh] flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-neutral-900/90 to-neutral-800/90"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="animate__animated animate__fadeInLeft">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Discover Electric Vehicles in Nepal
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8">
+                        Your comprehensive platform for real-time information about EV charging stations, sellers, brands, and more.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#chargingstations" class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 animate__animated animate__pulse animate__infinite">
+                            Find Charging Stations
+                        </a>
+                        <a href="#brands" class="bg-neutral-700 hover:bg-neutral-600 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300">
+                            Explore EV Brands
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block animate__animated animate__fadeInRight">
+                    <div class="relative">
+                        <div class="absolute -inset-4">
+                            <div class="w-full h-full bg-gradient-to-r from-green-500/30 to-blue-500/30 blur-xl">
+                            </div>
+                        </div>
+                        <div class="relative bg-neutral-800 p-6 rounded-xl">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-neutral-700 p-4 rounded-lg">
+                                    <h3 class="font-semibold mb-2">Charging Stations</h3>
+                                    <p class="text-gray-300 text-sm">Find nearest charging stations</p>
+                                </div>
+                                <div class="bg-neutral-700 p-4 rounded-lg">
+                                    <h3 class="font-semibold mb-2">Real-Time Data</h3>
+                                    <p class="text-gray-300 text-sm">Live updates on availability</p>
+                                </div>
+                                <div class="bg-neutral-700 p-4 rounded-lg">
+                                    <h3 class="font-semibold mb-2">Pricing Info</h3>
+                                    <p class="text-gray-300 text-sm">Current charging rates</p>
+                                </div>
+                                <div class="bg-neutral-700 p-4 rounded-lg">
+                                    <h3 class="font-semibold mb-2">Latest News</h3>
+                                    <p class="text-gray-300 text-sm">EV updates in Nepal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(45,212,191,0.1)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(45,212,191,0.05)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(45,212,191,0.02)" />
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <style>
+        .waves {
+            position: relative;
+            width: 100%;
+            height: 15vh;
+            margin-bottom: -7px;
+            min-height: 100px;
+            max-height: 150px;
+        }
+        .parallax > use {
+            animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+        }
+        .parallax > use:nth-child(1) {
+            animation-delay: -2s;
+            animation-duration: 7s;
+        }
+        .parallax > use:nth-child(2) {
+            animation-delay: -3s;
+            animation-duration: 10s;
+        }
+        .parallax > use:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 13s;
+        }
+        @keyframes move-forever {
+            0% {
+                transform: translate3d(-90px,0,0);
+            }
+            100% { 
+                transform: translate3d(85px,0,0);
+            }
+        }
+    </style>
+</div>
+</htmlCode></element><element id="1b2cf725-6c79-4bb9-ad3c-a128a992f008" data-section-id="1b2cf725-6c79-4bb9-ad3c-a128a992f008">
+
+<htmlCode>
+<div id="root">
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">Key Features</h2>
+                <p class="text-lg text-neutral-600">Discover what makes EV Nepal your ultimate EV information hub</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+                    <div class="bg-green-100 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-neutral-900">Real-Time Data</h3>
+                    <p class="text-neutral-600">Live updates on charging stations, availability, and pricing across Nepal</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="bg-blue-100 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-neutral-900">Charging Locations</h3>
+                    <p class="text-neutral-600">Comprehensive map of EV charging stations with detailed information</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="bg-purple-100 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-neutral-900">Price Tracking</h3>
+                    <p class="text-neutral-600">Updated charging prices and cost comparisons for different stations</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                    <div class="bg-yellow-100 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-neutral-900">News & Events</h3>
+                    <p class="text-neutral-600">Latest updates on EV industry, upcoming events, and announcements</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
+                    <div class="bg-red-100 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-neutral-900">Seller Directory</h3>
+                    <p class="text-neutral-600">Complete list of EV sellers with contact information and available models</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 1s;">
+                    <div class="bg-teal-100 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-neutral-900">Brand Catalog</h3>
+                    <p class="text-neutral-600">Detailed information about EV brands and models available in Nepal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode></element><element id="de2cd632-9da3-468f-b779-b491622f6930" data-section-id="de2cd632-9da3-468f-b779-b491622f6930">
+
+<htmlCode>
+<div id="root">
+    <section id="chargingstations" class="py-20 bg-neutral-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">Charging Stations</h2>
+                <p class="text-lg text-neutral-600">Find EV charging stations across Nepal</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 animate__animated animate__fadeInLeft">
+                    <div class="bg-neutral-900 rounded-lg p-4 mb-6">
+                        <h3 class="text-xl font-semibold text-white mb-4">Station Locator</h3>
+                        <div class="bg-neutral-800 p-4 rounded-lg mb-4">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <input type="text" placeholder="Search by location..." class="w-full px-4 py-2 rounded-lg bg-neutral-700 text-white placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-green-500">
+                                <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg transition-colors duration-300">
+                                    Search
+                                </button>
+                            </div>
+                            <div class="h-[300px] bg-neutral-700 rounded-lg flex items-center justify-center">
+                                <span class="text-neutral-400">Map View Coming Soon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate__animated animate__fadeInRight">
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h3 class="text-xl font-semibold text-neutral-900 mb-6">Available Stations</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-green-500 bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow duration-300 cursor-pointer">
+                                <h4 class="font-semibold">Kathmandu Central Station</h4>
+                                <p class="text-sm text-neutral-600">New Road, Kathmandu</p>
+                                <div class="flex items-center mt-2 text-sm">
+                                    <span class="text-green-500 mr-4">● Available</span>
+                                    <span>4 Charging Points</span>
+                                </div>
+                            </div>
+
+                            <div class="border-l-4 border-yellow-500 bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow duration-300 cursor-pointer">
+                                <h4 class="font-semibold">Patan Hub</h4>
+                                <p class="text-sm text-neutral-600">Lalitpur, Nepal</p>
+                                <div class="flex items-center mt-2 text-sm">
+                                    <span class="text-yellow-500 mr-4">● Busy</span>
+                                    <span>2 Charging Points</span>
+                                </div>
+                            </div>
+
+                            <div class="border-l-4 border-green-500 bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow duration-300 cursor-pointer">
+                                <h4 class="font-semibold">Bhaktapur Station</h4>
+                                <p class="text-sm text-neutral-600">Bhaktapur Durbar Square</p>
+                                <div class="flex items-center mt-2 text-sm">
+                                    <span class="text-green-500 mr-4">● Available</span>
+                                    <span>3 Charging Points</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <button class="w-full bg-neutral-900 hover:bg-neutral-800 text-white py-3 rounded-lg transition-colors duration-300">
+                                View All Stations
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 bg-green-50 rounded-xl p-4">
+                        <h4 class="font-semibold text-green-800 mb-2">Live Updates</h4>
+                        <div class="animate-pulse">
+                            <p class="text-sm text-green-600">
+                                ● Updating station availability in real-time...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode></element><element id="5cad0328-e4b4-49b5-a595-1c381654eb9b" data-section-id="5cad0328-e4b4-49b5-a595-1c381654eb9b">
+
+<htmlCode>
+<div id="root">
+    <section id="brands" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">Available EV Brands</h2>
+                <p class="text-lg text-neutral-600">Explore electric vehicle brands available in Nepal</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tesla Card -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp">
+                    <div class="bg-neutral-900 h-48 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">Tesla</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-500 font-semibold">Available</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Premium</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <p class="text-sm text-neutral-600">• Model 3</p>
+                            <p class="text-sm text-neutral-600">• Model Y</p>
+                            <p class="text-sm text-neutral-600">• Model S</p>
+                        </div>
+                        <button class="w-full bg-neutral-900 hover:bg-neutral-800 text-white py-2 rounded-lg transition-colors duration-300">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BYD Card -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="bg-neutral-900 h-48 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">BYD</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-500 font-semibold">Available</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Mid-Range</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <p class="text-sm text-neutral-600">• ATTO 3</p>
+                            <p class="text-sm text-neutral-600">• e6</p>
+                            <p class="text-sm text-neutral-600">• Yuan Plus</p>
+                        </div>
+                        <button class="w-full bg-neutral-900 hover:bg-neutral-800 text-white py-2 rounded-lg transition-colors duration-300">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- MG Card -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="bg-neutral-900 h-48 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">MG</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-green-500 font-semibold">Available</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Popular</span>
+                        </div>
+                        <div class="space-y-2 mb-4">
+                            <p class="text-sm text-neutral-600">• ZS EV</p>
+                            <p class="text-sm text-neutral-600">• MG4</p>
+                            <p class="text-sm text-neutral-600">• Marvel R</p>
+                        </div>
+                        <button class="w-full bg-neutral-900 hover:bg-neutral-800 text-white py-2 rounded-lg transition-colors duration-300">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center animate__animated animate__fadeIn">
+                <button class="inline-flex items-center bg-neutral-900 hover:bg-neutral-800 text-white px-8 py-3 rounded-lg transition-colors duration-300">
+                    <span>View All Brands</span>
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="mt-16 bg-neutral-50 rounded-xl p-8 animate__animated animate__fadeIn">
+                <h3 class="text-xl font-semibold mb-4">Coming Soon</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="bg-white p-4 rounded-lg text-center">
+                        <p class="text-neutral-900 font-medium">Volkswagen ID</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg text-center">
+                        <p class="text-neutral-900 font-medium">Hyundai Ioniq</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg text-center">
+                        <p class="text-neutral-900 font-medium">Kia EV6</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg text-center">
+                        <p class="text-neutral-900 font-medium">Nissan Leaf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode></element><element id="690dfa0e-aeef-4cd3-ad3a-ecef057850b9" data-section-id="690dfa0e-aeef-4cd3-ad3a-ecef057850b9">
+
+<htmlCode>
+<div id="root">
+    <section id="sellers" class="py-20 bg-neutral-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">Authorized EV Sellers</h2>
+                <p class="text-lg text-neutral-600">Connect with trusted EV dealers across Nepal</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Seller 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp">
+                    <div class="relative">
+                        <div class="bg-neutral-900 h-32 flex items-center justify-center">
+                            <span class="text-2xl font-bold text-white">Tesla Nepal</span>
+                        </div>
+                        <div class="absolute -bottom-6 left-6">
+                            <div class="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-12">
+                        <div class="mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Official Dealer</span>
+                        </div>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm text-neutral-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Kathmandu, Nepal
+                            </li>
+                            <li class="flex items-center text-sm text-neutral-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                +977-1-4444444
+                            </li>
+                            <li class="flex items-center text-sm text-neutral-600">
+                                <svg class="w-4 h-4 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                info@teslanp.com
+                            </li>
+                        </ul>
+                        <button class="w-full bg-neutral-900 hover:bg-neutral-800 text-white py-2 rounded-lg transition-colors duration-300">
+                            Contact Dealer
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Seller 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="relative">
+                        <div class="bg-neutral-900 h-32 flex items-center justify-center">
+                            <span class="text-2xl font-bold text-white">BYD Nepal</span>
+                        </div>
+                        <div class="absolute -bottom-6 left-6">
+                            <div class="bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-12">
+                        <div class="mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Premium Dealer</span>
+                        </div>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm text-neutral-600">
+                                <svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Lalitpur, Nepal
+                            </li>
+                            <li class="flex items-center text-sm text-neutral-600">
+                                <svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                +977-1-5555555
+                            </li>
+                            <li class="flex items-center text-sm text-neutral-600">
+                                <svg class="w-4 h-4 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                contact@bydnepal.com
+                            </li>
+                        </ul>
+                        <button class="w-full bg-neutral-900 hover:bg-neutral-800 text-white py-2 rounded-lg transition-colors duration-300">
+                            Contact Dealer
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Seller 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="relative">
+                        <div class="bg-neutral-900 h-32 flex items-center justify-center">
+                            <span class="text-2xl font-bold text-white">MG Motors Nepal</span>
+                        </div>
+                        <div class="absolute -bottom-6 left-6">
+                            <div class="bg-purple-500 w-12 h-12 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-12">
+                        <div class="mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Authorized Dealer</span>
+                        </div>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center text-sm text-neutral-600">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                Bhaktapur, Nepal
+                            </li>
+                            <li class="flex items-center text-sm text-neutral-600">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                +977-1-6666666
+                            </li>
+                            <li class="flex items-center text-sm text-neutral-600">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                sales@mgnepal.com
+                            </li>
+                        </ul>
+                        <button class="w-full bg-neutral-900 hover:bg-neutral-800 text-white py-2 rounded-lg transition-colors duration-300">
+                            Contact Dealer
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <button class="inline-flex items-center bg-neutral-900 hover:bg-neutral-800 text-white px-8 py-3 rounded-lg transition-colors duration-300 animate__animated animate__fadeIn">
+                    <span>View All Sellers</span>
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode></element><element id="c992219e-a56c-46c0-a4b0-59e32468ebe7" data-section-id="c992219e-a56c-46c0-a4b0-59e32468ebe7">
+
+<htmlCode>
+<div id="root">
+    <section id="news" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">Latest EV News & Events</h2>
+                <p class="text-lg text-neutral-600">Stay updated with the latest developments in Nepal's EV industry</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- News Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp">
+                    <div class="bg-neutral-900 h-48 flex items-center justify-center">
+                        <span class="text-white">EV News</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Latest News</span>
+                            <span class="text-neutral-500 text-sm ml-4">June 15, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-neutral-900">Nepal Announces New EV Policy</h3>
+                        <p class="text-neutral-600 mb-4">Government introduces new incentives for electric vehicle adoption...</p>
+                        <button class="text-green-500 hover:text-green-600 font-medium inline-flex items-center">
+                            Read More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- News Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="bg-neutral-900 h-48 flex items-center justify-center">
+                        <span class="text-white">Events</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Upcoming Event</span>
+                            <span class="text-neutral-500 text-sm ml-4">July 1, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-neutral-900">EV Expo 2024</h3>
+                        <p class="text-neutral-600 mb-4">Join us at the largest EV expo in Kathmandu featuring...</p>
+                        <button class="text-green-500 hover:text-green-600 font-medium inline-flex items-center">
+                            Learn More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- News Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="bg-neutral-900 h-48 flex items-center justify-center">
+                        <span class="text-white">Updates</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Technology</span>
+                            <span class="text-neutral-500 text-sm ml-4">June 20, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-neutral-900">New Charging Network Launch</h3>
+                        <p class="text-neutral-600 mb-4">Major expansion of charging infrastructure across Nepal...</p>
+                        <button class="text-green-500 hover:text-green-600 font-medium inline-flex items-center">
+                            Read More
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <div class="bg-neutral-900 rounded-xl p-8 animate__animated animate__fadeIn">
+                    <div class="text-center text-white mb-8">
+                        <h3 class="text-2xl font-bold mb-4">Stay Updated</h3>
+                        <p class="text-neutral-300">Subscribe to our newsletter for the latest EV news and updates</p>
+                    </div>
+                    <form class="max-w-md mx-auto">
+                        <div class="flex gap-4">
+                            <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg transition-colors duration-300">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <button class="inline-flex items-center bg-neutral-900 hover:bg-neutral-800 text-white px-8 py-3 rounded-lg transition-colors duration-300 animate__animated animate__fadeIn">
+                    <span>View All News</span>
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode></element><element id="d5ce68f2-2a2a-473b-8dd2-83ad152b3deb" data-section-id="d5ce68f2-2a2a-473b-8dd2-83ad152b3deb">
+
+<htmlCode>
+<div id="root">
+    <section id="pricing" class="py-20 bg-neutral-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">EV Charging Prices</h2>
+                <p class="text-lg text-neutral-600">Compare charging costs across different stations and providers</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Standard Charging -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp">
+                    <div class="bg-neutral-900 p-8 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Standard Charging</h3>
+                        <div class="text-green-400 flex justify-center items-baseline">
+                            <span class="text-3xl font-bold">Rs.</span>
+                            <span class="text-5xl font-bold">15</span>
+                            <span class="text-xl">/kWh</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Up to 7.4kW Power Output
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                6-8 Hours Average Time
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Type 2 Connector
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fast Charging -->
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform scale-105 animate__animated animate__fadeInUp">
+                    <div class="bg-green-600 p-8 text-center relative">
+                        <div class="absolute top-0 right-0 bg-yellow-400 text-neutral-900 text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            POPULAR
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Fast Charging</h3>
+                        <div class="text-white flex justify-center items-baseline">
+                            <span class="text-3xl font-bold">Rs.</span>
+                            <span class="text-5xl font-bold">25</span>
+                            <span class="text-xl">/kWh</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Up to 50kW Power Output
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                1-2 Hours Average Time
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                CCS/CHAdeMO
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Rapid Charging -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp">
+                    <div class="bg-neutral-900 p-8 text-center">
+                        <h3 class="text-xl font-bold text-white mb-2">Rapid Charging</h3>
+                        <div class="text-green-400 flex justify-center items-baseline">
+                            <span class="text-3xl font-bold">Rs.</span>
+                            <span class="text-5xl font-bold">35</span>
+                            <span class="text-xl">/kWh</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                100kW+ Power Output
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                20-30 Minutes Average
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                CCS2/Tesla
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-white rounded-xl p-8 shadow-lg animate__animated animate__fadeIn">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold mb-4">Price Calculator</h3>
+                    <p class="text-neutral-600">Estimate your charging costs</p>
+                </div>
+                <div class="max-w-md mx-auto">
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-neutral-700 mb-2">Select Charging Type</label>
+                            <select class="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                <option>Standard Charging</option>
+                                <option>Fast Charging</option>
+                                <option>Rapid Charging</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-neutral-700 mb-2">Enter kWh Required</label>
+                            <input type="number" class="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" placeholder="Enter kWh">
+                        </div>
+                        <button class="w-full bg-neutral-900 hover:bg-neutral-800 text-white py-3 rounded-lg transition-colors duration-300">
+                            Calculate Cost
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode></element><element id="f18ae8b8-68f0-48d2-abc2-acd7c8109f88" data-section-id="f18ae8b8-68f0-48d2-abc2-acd7c8109f88">
+
+<htmlCode>
+<div id="root">
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">Contact Us</h2>
+                <p class="text-lg text-neutral-600">Have questions? Get in touch with our team</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-xl shadow-lg p-8 animate__animated animate__fadeInLeft">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-neutral-700 mb-2">First Name</label>
+                                <input type="text" class="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-neutral-700 mb-2">Last Name</label>
+                                <input type="text" class="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-neutral-700 mb-2">Email Address</label>
+                            <input type="email" class="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-neutral-700 mb-2">Phone Number</label>
+                            <input type="tel" class="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-neutral-700 mb-2">Subject</label>
+                            <select class="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                                <option>General Inquiry</option>
+                                <option>Technical Support</option>
+                                <option>Charging Station Info</option>
+                                <option>Business Partnership</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-neutral-700 mb-2">Message</label>
+                            <textarea rows="4" class="w-full p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-neutral-900 hover:bg-neutral-800 text-white py-3 rounded-lg transition-colors duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8 animate__animated animate__fadeInRight">
+                    <div class="bg-neutral-900 text-white rounded-xl p-8">
+                        <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-green-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <span>Kathmandu, Nepal</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-green-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <span>info@evnepal.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-green-500 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                                <span>+977-1-4444444</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-neutral-50 rounded-xl p-8">
+                        <h3 class="text-xl font-bold mb-6">Business Hours</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-neutral-600">Monday - Friday</span>
+                                <span class="font-medium">9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-neutral-600">Saturday</span>
+                                <span class="font-medium">10:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-neutral-600">Sunday</span>
+                                <span class="font-medium">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 rounded-xl p-8">
+                        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-neutral-600 hover:text-neutral-900">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-neutral-600 hover:text-neutral-900">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-neutral-600 hover:text-neutral-900">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode></element><element id="f080758d-81f8-4ce9-9eb9-1625cd60d39a" data-section-id="f080758d-81f8-4ce9-9eb9-1625cd60d39a">
+
+<htmlCode>
+<div id="root">
+    <footer id="footer" class="bg-neutral-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Company Info -->
+                <div class="animate__animated animate__fadeIn">
+                    <h3 class="text-xl font-bold mb-6">EV Nepal</h3>
+                    <p class="text-neutral-400 mb-6">Your comprehensive platform for electric vehicle information in Nepal.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="animate__animated animate__fadeIn">
+                    <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#hero" class="text-neutral-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#features" class="text-neutral-400 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#chargingstations" class="text-neutral-400 hover:text-white transition-colors">Charging Stations</a></li>
+                        <li><a href="#brands" class="text-neutral-400 hover:text-white transition-colors">Brands</a></li>
+                        <li><a href="#sellers" class="text-neutral-400 hover:text-white transition-colors">Sellers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="animate__animated animate__fadeIn">
+                    <h3 class="text-xl font-bold mb-6">Resources</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#news" class="text-neutral-400 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="#pricing" class="text-neutral-400 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="animate__animated animate__fadeIn">
+                    <h3 class="text-xl font-bold mb-6">Newsletter</h3>
+                    <p class="text-neutral-400 mb-4">Subscribe to our newsletter for updates</p>
+                    <form class="space-y-4">
+                        <input type="email" placeholder="Your email address" class="w-full px-4 py-2 bg-neutral-800 border border-neutral-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-white">
+                        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition-colors duration-300">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-neutral-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-neutral-400 text-sm">© 2024 EV Nepal. All rights reserved.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-neutral-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-neutral-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                        <a href="#" class="text-neutral-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</htmlCode></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
