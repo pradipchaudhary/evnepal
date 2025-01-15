@@ -16,7 +16,7 @@ const Brands = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* <!-- Tesla Card --> */}
                     <div className="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp">
-                        <div className="bg-neutral-900 h-48 flex items-center justify-center">
+                        <div className="bg-gradient-to-r from-green-700 to-green-400 h-48 flex items-center justify-center">
                             <h3 className="text-2xl font-bold text-white">
                                 Tesla
                             </h3>
@@ -52,7 +52,7 @@ const Brands = () => {
                         className="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp"
                         style={{ animationDelay: "0.2s" }}
                     >
-                        <div className="bg-neutral-900 h-48 flex items-center justify-center">
+                        <div className="bg-gradient-to-r from-green-700 to-green-400  h-48 flex items-center justify-center">
                             <h3 className="text-2xl font-bold text-white">
                                 BYD
                             </h3>
@@ -86,7 +86,7 @@ const Brands = () => {
                         className="bg-white rounded-xl shadow-lg overflow-hidden animate__animated animate__fadeInUp"
                         style={{ animationDelay: "0.4s" }}
                     >
-                        <div className="bg-neutral-900 h-48 flex items-center justify-center">
+                        <div className="bg-gradient-to-r from-green-700 to-green-400  h-48 flex items-center justify-center">
                             <h3 className="text-2xl font-bold text-white">
                                 MG
                             </h3>
@@ -129,9 +129,9 @@ const Brands = () => {
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
                                 d="M9 5l7 7-7 7"
                             ></path>
                         </svg>

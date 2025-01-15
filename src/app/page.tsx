@@ -2,19 +2,21 @@ import Brands from "@/components/Brands";
 import ChargingStations from "@/components/ChargingStations";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import LogoTicker from "@/components/LogoTicker";
 import News from "@/components/News";
 import Sellers from "@/components/Sellers";
 
 export default function Home() {
     return (
-        <main className="overflow-hidden">
+        <>
             <Hero />
+            <LogoTicker />
             <Features />
             <ChargingStations />
             <Brands />
             <Sellers />
             <News />
-        </main>
+        </>
     );
 }
 
