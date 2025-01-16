@@ -4,12 +4,12 @@ import React from "react";
 
 const Hero = () => {
     return (
-        <section className="relative  bg-gradient-to-b from-green-50 to-white py-32 overflow-hidden -z-0">
+        <section className=" bg-gradient-to-b from-green-50 to-white py-32 overflow-hidden -z-0">
             <div className="absolute  inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
             <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-[500px] h-[500px] bg-green-200 rounded-full opacity-20 blur-3xl animate-pulse"></div>
             </div>
-            <div className="container mx-auto px-4 relative mt-[10.5rem]">
+            <div className="container mx-auto px-4 relative">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-16">
                     <div className="md:w-1/2 animate-fade-in">
                         <div className="inline-block px-4 py-2 bg-green-100 rounded-full text-green-700 font-medium text-sm mb-6 hover:scale-105 transition-transform cursor-default">

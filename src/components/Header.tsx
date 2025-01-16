@@ -25,21 +25,13 @@ export default function Header() {
 
     return (
         <>
-            {/* // Header  bg-white/10 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100*/}
-            {/* className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-                scrolled
-                    ? "bg-black/60 shadow-lg backdrop-blur-sm"
-                    : "bg-transparent"
-            }`} */}
             <header
                 id="header"
-                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-                    scrolled
-                        ? "bg-white/75 shadow-md backdrop-blur-sm"
-                        : "bg-transparent"
+                className={`bg-white/100  sticky top-0 z-50 border-b border-gray-100 left-0 right-0 transition-all duration-300 ${
+                    scrolled ? "bg-white/75 " : "bg-transparent"
                 }`}
             >
-                <div className="  progress bg-gradient-to-r from-green-700 to-green-400 py-2 text-center">
+                <div className="  progress bg-gradient-to-r from-green-700 via-green-500 to-green-300 py-1 text-center">
                     <div className="container mx-auto">
                         <div className="font-extralight flex items-center justify-center gap-2">
                             Work in progress. Suggestions at{" "}
@@ -61,13 +53,12 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="container mx-auto px-4 py-3">
+                <div className="container mx-auto px-4 py-1">
                     <nav className="flex items-center justify-between h-16">
                         <Link
                             href="/"
                             className="flex items-center gap-2 group"
                         >
-                            {/* <div className="relative w-8 h-8 bg-green-600 rounded-lg overflow-hidden group-hover:scale-105 transition-transform"></div> */}
                             <Logo />
 
                             <span className="font-bold text-2xl text-gray-900 group-hover:text-green-600 transition-colors">
