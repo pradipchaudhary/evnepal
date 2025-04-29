@@ -19,6 +19,10 @@ EV Nepal is a comprehensive platform for gathering and displaying information ab
 -   **Frontend**: React.js
 -   **Styling**: Tailwind CSS
 
+## 🌐 Live Demo
+
+Experience the live application here: [evnep.vercel.app](https://evnep.vercel.app)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
